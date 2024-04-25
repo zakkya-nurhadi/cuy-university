@@ -1,0 +1,16 @@
+/* Selector Pseudo-Class */
+#contoh_hover {
+  width: 100%;
+  height: 50px;
+  background: red;
+}
+#contoh_hover:hover {
+  width: 100%;
+  height: 50px;
+  background: rgb(0, 42, 255);
+}
+/* 4. Selector Pseudo-Elements */
+#p1::first-letter {
+  color: rgb(255, 4, 0);
+  font-size: xx-large;
+}

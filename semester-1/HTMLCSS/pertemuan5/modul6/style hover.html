@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      form#background_border_hover input[type="submit"] {
+        width: 100%;
+        padding: 10px 18px;
+        margin: 7px 0; display: inline-block;
+        box-sizing: border-box;
+        color: white;
+        background-color: #ff0000;
+        border: 1px solid black;
+      }
+      form#background_border_hover input[type="submit"]:hover {
+        background-color: rgb(64, 255, 0);
+        color: #3e32ae;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="background_border_hover">
+      <fieldset>
+        <table width="100%">
+          <tr>
+            <td width="40%"><label> nama </label></td>
+            <td><input type="text" name="nama lengkap" /></td>
+          </tr>
+          <tr>
+            <td width="40%">Alamat Rumah</td>
+            <td>
+              <input type="text" name="alamat" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <input type="submit" value="kirim" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penulisan Syntax CSS</title>
+    <!-- 
+    Selector Sederhana (Simple)
+    Selector Id dan Class
+    Universal Selector
+    Grouping Selector
+    -->
+    <style type="text/css">
+      p {
+        color: blue;
+        text-align: center;
+      }
+      #paragraf {
+        color: red;
+      }
+      .classparagraf {
+        color: rgb(82, 255, 25);
+        text-align: left;
+        font-size: 100px;
+      }
+      * {
+        color: cyan;
+        text-align: center;
+      }
+      h4,
+      h5,
+      h3 {
+        color: red;
+      }
+    </style>
+
+    <!--2. Selector Kombinasi (Combinator) -->
+    <!-- Descandant Selector -->
+    <!-- Child Selector -->
+    <!-- Adjacent Sibling Selector -->
+    <!-- General Sibling Selector -->
+    <style type="text/css">
+      div h1 {
+        color: purple;
+      }
+      div p span {
+        color: black;
+      }
+
+      #div1 p {
+        color: blue;
+      }
+      #div1 > p {
+        color: red;
+      }
+
+      #div2 + p {
+        background-color: yellow;
+      }
+
+      #div3 ~ p {
+        background-color: yellow;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!-- 1. Selector Sederhana (Simple) -->
+    <p>Ini Warna biru rata tengah</p>
+    <!-- Selector Id dan Class -->
+    <p id="paragraf">Ini Selector ID(#)</p>
+    <p class="classparagraf">Ini Selector CLASS(.)</p>
+    <!-- Universal Selector -->
+    <h1>Ini H1</h1>
+    <h2>Ini H2</h2>
+    <!-- Grouping Selector -->
+    <h3>Ini H3</h3>
+    <h4>Ini H4</h4>
+    <h5>Ini H5</h5>
+
+    <!--2. Selector Kombinasi (Combinator) -->
+    <!-- Descandant Selector -->
+    <div>
+      <h1>Selector Kombinasi</h1>
+      <p><span>test</span></p>
+    </div>
+    <!-- Child Selector -->
+
+    <div id="div1">
+      <p>Paragraf 1</p>
+      <section><p>Paragraf 3</p></section>
+      <p>Paragraf 2</p>
+    </div>
+
+    <!-- Adjacent Sibling Selector -->
+
+    <div id="div2">
+      <p>Paragraf 1 dalam div</p>
+      <p>Paragraf 2 dalam div</p>
+    </div>
+    <p>Paragraf 3 luar div</p>
+    <p>Paragraf 4 luar div</p>
+    <br /><br />
+
+    <!-- General Sibling Selector -->
+    <div id="div3">
+      <p>Paragraf 1 dalam div</p>
+      <p>Paragraf 2 dalam div</p>
+    </div>
+    <p>Paragraf 3 luar div</p>
+    <p>Paragraf 4 luar div</p>
+    <p>Paragraf 5 luar div</p>
+    <!-- 3. Selector Pseudo-Class -->
+    <div id="contoh_hover"></div>
+    <br />
+    <!-- 4. Selector Pseudo-Elements -->
+    <p id="p1">test</p>
+  </body>
+</html>
